@@ -3,55 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D:</title>
+    <title>Panadería Artesanal - Los Mejores Sabores</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="header">
-        <span>Lorem ipsum dolor sit amet</span>
+        <span>Horario: Lunes a Domingo 6:00 AM - 8:00 PM</span>
         <div class="headerRightContent">
-            <span>Lorem ipsum dolor</span>
-            <span>Lorem ipsum</span>
-            <ul class="headerList">
-                <li>icon</li>
-                <li>icon</li>
-                <li>icon</li>
-                <li>icon</li>
-            </ul>
+            <span> (555) 123-4567</span>
+            <span> Calle Principal 123</span>
         </div>
     </header>
 
     <nav class="nav">
-        <span>Logo</span>
+        <span>Panadería Artesanal</span>
         <ul class="navList">
-            <li>Logo</li>
-            <li>Donde comprar</li>
-            <li>Search</li>
-            <li>Logo</li>
-            <li>Donde comprar</li>
-            <li>Search</li>
+            <li> Inicio</li>
+            <li> Productos</li>
+            <li> Buscar</li>
+            <li> Recetas</li>
+            <li>Ubicaciones</li>
+            <li> Contacto</li>
             <li>
-                <button>button</button>
+                <button>Ordenar Ahora</button>
             </li>
         </ul>
     </nav>
     
     <main>
         <section class="homeImageContainer">
-            <img class="homeImage" src="/assets/bakeryimage.jpg" alt="imagen de panaderia">
+            <img class="homeImage" src="assets/bakeryimage.jpg" alt="imagen de panaderia">
             <div class="infoOverlay">
                 <h2>Bienvenidos a nuestra panadería</h2>
                 <p>Disfruta de los mejores productos artesanales, frescos y deliciosos.</p>
                 <button>Ver Productos</button>
             </div>
         </section> <!-- de presentación personal o institucional -->
-        <section></section>  <!-- de servicios, productos o publicaciones -->
-        <article></article>  <!-- con una entrada de blog o noticia -->
-        <aside></aside>  <!-- con contenido complementario (ej. enlaces externos, noticias) -->
-        <form action=""></form>   <!-- de contacto con validación básica (nombre, correo, mensaje) -->
+        
+        <section class="services-section"> <!-- de servicios, productos o publicaciones -->
+            <h2>Nuestros Productos Especiales</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3> Croissants Artesanales</h3>
+                    <p>Nuestros croissants están hechos con mantequilla de la más alta calidad y horneados diariamente para garantizar su frescura y sabor inigualable.</p>
+                </div>
+                <div class="service-card">
+                    <h3> Pan de Masa Madre</h3>
+                    <p>Elaborado con técnicas tradicionales y fermentación natural, nuestro pan de masa madre es el favorito de nuestros clientes más exigentes.</p>
+                </div>
+                <div class="service-card">
+                    <h3> Pasteles Personalizados</h3>
+                    <p>Celebra tus momentos especiales con nuestros pasteles únicos, elaborados con ingredientes frescos y decorados con arte y dedicación.</p>
+                </div>
+            </div>
+        </section>
+        
+        <article class="blog-article"> <!-- con una entrada de blog o noticia -->
+            <h2>La Historia de Nuestra Panadería</h2>
+            <div class="meta">Publicado el 15 de Noviembre, 2024 | Por Chef María González</div>
+            <p>Desde 1985, nuestra panadería ha sido un punto de referencia en la comunidad, manteniendo vivas las tradiciones culinarias que han pasado de generación en generación. Cada mañana, nuestros panaderos expertos se levantan antes del amanecer para crear los productos más frescos y deliciosos que puedas imaginar.</p>
+            <p>Utilizamos solo los ingredientes más frescos y de la más alta calidad, desde la harina orgánica hasta la mantequilla sin sal de la región. Nuestro compromiso con la excelencia y el sabor auténtico nos ha convertido en la panadería preferida de familias y restaurantes locales.</p>
+        </article>
+        
+        <aside> <!-- con contenido complementario (ej. enlaces externos, noticias) -->
+            <h3>Noticias y Recetas</h3>
+            <ul>
+                <li><a href="#"> Recetas Navideñas Especiales</a></li>
+                <li><a href="#"> Cómo Hacer Pan en Casa</a></li>
+                <li><a href="#"> Nuevos Productos de Temporada</a></li>
+                <li><a href="#"> Eventos y Talleres de Cocina</a></li>
+                <li><a href="#"> Premios y Reconocimientos</a></li>
+            </ul>
+        </aside>
+        
+        <form class="contact-form" action=""> <!-- de contacto con validación básica (nombre, correo, mensaje) -->
+            <h2>Contáctanos</h2>
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu pedido especial o consulta..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        </form>
     </main>
-    <footer></footer>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Panadería Artesanal</h3>
+                <p>Los mejores sabores desde 1985</p>
+                <p> Calle Principal 123, Ciudad</p>
+                <p> (555) 123-4567</p>
+                <p> info@panaderiaartesanal.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Horarios</h3>
+                <p>Lunes a Domingo</p>
+                <p>6:00 AM - 8:00 PM</p>
+                <p>Abierto todos los días</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"> Facebook</a>
+                    <a href="#" class="social-link"> Instagram</a>
+                    <a href="#" class="social-link"> Twitter</a>
+                    <a href="#" class="social-link"> YouTube</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2024 Panadería Artesanal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
 
